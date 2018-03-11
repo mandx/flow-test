@@ -1,0 +1,31 @@
+[ignore]
+
+[include]
+
+[libs]
+
+[lints]
+; Triggers when you do an existence check on a value that can be either null/undefined or falsey.
+sketchy-null=warn
+sketchy-null-bool=off
+;;sketchy-null-number=warn
+;;sketchy-null-string=warn
+;;sketchy-null-mixed=warn
+
+; Triggers when you import a type from an untyped file. Importing a type from an untyped file results in an any alias, which is typically not the intended behavior. Enabling this lint brings extra attention to this case and can help improve Flow coverage of typed files by limiting the spread of implicit any types.
+untyped-type-import=warn
+
+;Triggers when you import from an untyped file. Importing from an untyped file results in those imports being typed as any, which is unsafe.
+untyped-import=warn
+
+; Triggers when you use any, Object, or Function as type annotations. These types are unsafe.
+unclear-type=warn
+
+; Triggers when you use getters or setters. Getters and setters can have side effects and are unsafe.
+unsafe-getters-setters=warn
+
+[options]
+include_warnings=true
+
+[version]
+0.67.1
