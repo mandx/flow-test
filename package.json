@@ -7,6 +7,6 @@
     "type-check": "flow --include-warnings index.js"
   },
   "dependencies": {
-    "flow-bin": "^0.67.1"
+    "flow-bin": "^0.71.0"
   }
 }

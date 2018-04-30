@@ -1,4 +1,5 @@
 [ignore]
+<PROJECT_ROOT>/node_modules/.*
 
 [include]
 
@@ -26,6 +27,17 @@ unsafe-getters-setters=warn
 
 [options]
 include_warnings=true
+experimental.well_formed_exports=true
+experimental.const_params=true
+
+[strict]
+nonstrict-import
+unclear-type
+unsafe-getters-setters
+untyped-import
+untyped-type-import
+sketchy-null
 
 [version]
-0.67.1
+^0.71.0
+
